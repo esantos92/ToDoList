@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/styleExcluirTarefa.css">
+  <link rel="stylesheet" href="./styles/styleModalEditarTarefa.css">
+  <link rel="stylesheet" href="./styles/styleModalInfoTarefa.css">
+  <link rel="stylesheet" href="./styles/styleModalNovaTarefa.css">
+
+  <title>ToDoList</title>
+</head>
+<body>
+  <header class="titulo">
+    <h1>ToDoList</h1>
+  </header>
+
+  <main>
+    <section class="novaTarefa">
+      <div>
+        <button class="botaoNovaTarefa">
+          <span>Inserir nova tarefa: </span>
+          <img src="./images/addIcon.svg" alt="Adicionar Tarefa">
+        </button>
+      </div>
+    </section>
+
+    <section class="tarefas">
+      <!-- Escopo da tarefa -->
+      <!-- <div class="tarefa">
+        <img src="./images/checkedIcon.svg" alt="Tarefa concluída">
+        <p>Titulo da tarefa</p>
+        <div class="comandos">
+          <button><img src="./images/checkIcon.svg" alt="Concluir tarefa"></button>
+          <button><img src="./images/infoIcon.svg" alt="Detalhes da tarefa"></button>
+          <button><img src="./images/editIcon.svg" alt="Editar tarefa"></button>
+          <button><img src="./images/deleteIcon.svg" alt="Excluir tarefa"></button>
+
+        </div>
+      </div> -->
+
+    </section>
+
+    <!-- modal para incluir nova tarefa -->
+    <div id="modalNovaTarefa">
+      <h3>Nova Tarefa</h3>
+      <form>
+        <div class="tituloTarefa">
+          <span>Titulo da tarefa:</span><input type="text" id="nomeTarefa">
+        </div>
+        <!-- <div class="descricaoTarefa">
+          <span>Descrição da tarefa:</span>
+          <input type="text">
+        </div> -->
+        <div class="botoes">
+          <button id="cancelarNovaTarefa">Cancelar</button>
+          <button id="confirmarNovaTarefa">Confirmar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- modal para editar uma tarefa -->
+    <div id="modalEditarTarefa">
+      <h3>Editar Tarefa</h3>
+      <form action="post">
+        <div class="tituloTarefa">
+          <span>Titulo da tarefa:</span><input type="text">
+        </div>
+        <!-- <div class="descricaoTarefa">
+          <span>Descrição da tarefa:</span>
+          <input type="text">
+        </div> -->
+        <div class="botoes">
+          <button>Cancelar</button>
+          <button>Confirmar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- modal de exibição da descrição da tarefa -->
+    <!-- <div id="modalInfoTarefa">
+      <h3>Descriçao da Tarefa</h3>
+      <h3>Titulo da Tarefa</h3>
+      <p>Cinco patinhos foram passear e bla bla bla bla....</p>
+      <button>fechar</button>
+    </div> -->
+
+    <!-- modal para exclusão da tarefa -->
+    <div id="modalExcluirTarefa">
+      <h3>Você deseja excluir esta tarefa?</h3>
+      <div class="botoes">
+        <button>Não</button>
+        <button>Sim</button>
+      </div>
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

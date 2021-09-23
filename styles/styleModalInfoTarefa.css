@@ -1,0 +1,39 @@
+#modalInfoTarefa{
+  display: none; /*alterar para flex*/
+  flex-direction: column;  
+  width: 400px;
+  position: fixed;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px #000000;
+  border-radius: 5px;
+}
+
+#modalInfoTarefa h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#modalInfoTarefa p {
+  font-weight: bold;
+  font-size: 25px;
+  height: 160px;
+}
+
+#modalInfoTarefa button{
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  margin-left: 120px;
+  border: solid 1px #646464;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #b82a2a;
+}
